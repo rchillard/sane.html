@@ -1,4 +1,4 @@
-[sane.html](github.com/rchillard/sane.html) | [Table of Contents](README.md)
+[sane.html](https://github.com/rchillard/sane.html)| [Table of Contents](README.md)
 
 # Images
 

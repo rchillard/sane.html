@@ -1,17 +1,14 @@
 # sane.html
-HTML stencil of sanity is a template for building static HTML5 websites.
+Template for building static HTML5 websites.  Interested in building a web application instead?  Check out [sane.app](https://github.com/rchillard/sane.app).
 
 ## Influences
 sane.html is primarily based off of [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) with the following changes:
-- Removal of Google Analytics (try out privacy preserving alternatives)
-- Removal of explicit support for Internet Explorer (e.g. no browserconfig.xml)
-- Removal of editor and git configuration files 
+- Removal of editor and git configuration files
 - Removal of build process and npm configuration files
-- Removal of signficant amounts of superfluous documentation
 - Removal of all extra elements supporting web applications
-
-## Considerations
-This stencil does not support Internet Explorer.
+- Removal of signficant amounts of superfluous documentation
+- Removal of Google Analytics (try out a privacy preserving alternative instead)
+- Removal of explicit support for Internet Explorer (e.g. no browserconfig.xml)
 
 ## Usage
 
@@ -28,6 +25,7 @@ A sane.html site initially has this structure:
 │   └── styles.css
 ├── doc
 ├── img
+│   └── originals
 ├── js
 │   ├── main.js
 │   ├── plugins.js
@@ -46,11 +44,15 @@ A sane.html site initially has this structure:
 ### css
 
 This directory should contain all your project's CSS files. It includes some
-initial CSS to help get you started from a solid foundation. [About CSS](doc/css.md)
+initial CSS to help get you started from a solid foundation. [About CSS](doc/css.md).
 
 ### doc
 
 This directory contains all the documentation. You can use it as the location for your documentation. [Read Docs](doc/README.md).
+
+### img
+
+This directory contains processed images that have been resized and compressed.  The originals sub-directory can contain unprocessed images, if you choose to commit them to version control.
 
 ### js
 
@@ -81,7 +83,3 @@ Edit this file to include any pages you need hidden from search engines.
 
 Replace the default `favicon.ico`, `tile.png`, `tile-wide.png` and Apple Touch
 Icon with your own.
-
-If you want to use different Apple Touch Icons for different resolutions please
-refer to the [according documentation](extend.md#apple-touch-icons).
-
