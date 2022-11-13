@@ -1,1 +1,120 @@
-/* main styles */
+/* main styles using CUBE CSS https://cube.fyi/ */
+:root {
+    /* breakpoints */
+    --breakpoint-xsmall: 380px;
+	--breakpoint-small: 600px;
+	--breakpoint-medium: 768px;
+	--breakpoint-large: 992px;
+	--breakpoint-xlarge: 1200px;
+
+    /* colors */
+    --color-primary: white;
+    --color-secondary: black;
+    --color-tertiary: gray;
+
+    color-scheme: light;
+
+    /* fonts */
+    --font-stack: Verdana, Arial, Helvetica, sans-serif;
+
+    /* layout */
+    --gap: 1.5rem;
+}
+
+/* base */
+body {
+    font-family: var(--ff);
+    font-size: large;
+}
+
+header, main, footer {
+    margin: 1rem auto;
+	max-width: clamp(360px, 80ch, 1100px);
+	padding: 0 1rem;
+	width: 100%;
+}
+
+nav {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 1rem;
+	position: relative;
+	text-align: left;
+}
+
+nav ul li a:hover {
+	color: var(--color-tertiary);
+	text-decoration: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+/* composition */
+
+main > * {
+    padding-bottom: 1rem;
+}
+
+form > * {
+    display: block;
+    padding-left: 1rem;
+}
+
+/* utility */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+/* block */
+
+.button {
+    border: 0;
+    cursor: pointer;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+.button[data-type="primary"] {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.button[data-type="primary"]:hover,
+.button[data-type="primary"]:focus {
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+}
+
+.checklist {
+
+}
+
+/* exception */
+
+.logo {
+    display: inline;
+    width: 2rem;
+}
+
+/* media queries */
+/* extra small devices (compact phones, 380px and smaller) */
+
+@media only screen and (max-width: 380px) {
+    nav {
+		flex-direction: column;
+	}
+}
