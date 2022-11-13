@@ -26,8 +26,8 @@
 <body>
   <!-- Add your site or application content here -->
 
-  <header>
-    <nav>
+  <header class="wrapper">
+    <nav class="main-menu | horizontal-distributed">
       <a href="#">
         <span>Name</span>
         <img alt="" class="logo" src="./icon.png">
@@ -40,22 +40,42 @@
     </nav>
   </header>
 
-  <main>
+  <main class="flow | wrapper">
     <h1>Main</h1>
     <p>Hello universe! This is sane.html.</p>
     <p>Getting started checklist:</p>
-    <form>
+    <form class="checklist">
       <label><input type="checkbox"> Add a site Title</label>
       <label><input type="checkbox"> Update head element and metadata</label>
+      <label><input type="checkbox"> Brush up on CubeCSS</label>
+      <label><input type="checkbox"> Open styles.css and set variables such as colors, font, spacing</label>
     </form>
 
     <h2>Examples</h2>
-    <h3>Button</h3>
-    <button class="button" data-type="primary">I am a button.</button>
+    <h3>Buttons</h3>
+    <button class="button" data-type="primary">I am a primary button.</button>
+    <button class="button" data-type="secondary">I am a secondary button.</button>
+    <h3>Cards</h3>
+    <article class="card | flow">
+      <h4>Primary Card</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut recusandae excepturi saepe est! Rerum, nisi,
+        aliquid repellat omnis, itaque ab aspernatur esse tenetur sequi harum dicta inventore cupiditate voluptatem
+        obcaecati quae perspiciatis odio labore maiores. Dignissimos ducimus necessitatibus, id corrupti mollitia sequi
+        autem tempora a quidem consequatur accusamus, eos maiores.</p>
+      <button class="button" data-type="primary">I am a primary button.</button>
+    </article>
+    <article class="card | flow | color-primary bg-secondary">
+      <h4>Secondary Card</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate ullam, harum veritatis quam, nesciunt
+        incidunt quidem dolorem perspiciatis repellat magnam, consectetur similique. Sed laudantium cum magnam aut
+        maiores explicabo amet libero ea optio? Voluptatem, quibusdam itaque ab labore inventore quas. Doloremque
+        cupiditate cum nobis, placeat sed in dolores aut.</p>
+      <button class="button" data-type="secondary">I am a secondary button.</button>
+    </article>
   </main>
 
-  <footer>
-    <nav>
+  <footer class="wrapper">
+    <nav class="main-menu | horizontal-distributed">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href=".html">Link 1</a></li>
