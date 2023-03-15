@@ -40,7 +40,7 @@
 
 /* base */
 body {
-    font-family: var(--ff);
+    font-family: var(--font-stack);
     font-size: var(--step--1);
 }
 
