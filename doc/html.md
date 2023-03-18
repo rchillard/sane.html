@@ -35,8 +35,7 @@ document](https://html.spec.whatwg.org/multipage/semantics.html#charset)
 and should be specified as early as possible (before any content that could be
 controlled by an attacker, such as a `<title>` element) in order to avoid a
 potential [encoding-related security
-issue](https://code.google.com/archive/p/doctype-mirror/wikis/ArticleUtf7.wiki)
-in Internet Explorer
+issue](https://code.google.com/archive/p/doctype-mirror/wikis/ArticleUtf7.wiki).
 
 ### Meta Description
 
@@ -95,8 +94,7 @@ most basic implementation.
 
 The web app manifest is a simple JSON file that allows you to control how your
 app appears on a device's home screen, what it looks like when it launches in
-that context and what happens when it is launched. This allows for much greater`
-control over the UI of a saved site or web app on a mobile device.
+that context and what happens when it is launched. This allows for much greater control over the UI of a saved site or web app on a mobile device.
 
 It's linked to from the HTML as follows:
 
@@ -116,5 +114,4 @@ Apple Touch Icon) that you can use as a baseline to create your own.
 ### The Content Area
 
 The central part of the boilerplate template is pretty much empty. This is
-intentional, in order to make the boilerplate suitable for both web page and web
-app development.
+intentional.

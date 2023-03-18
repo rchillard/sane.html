@@ -19,4 +19,4 @@ function, thus, preventing the browser from throwing an error.
 
 ## vendor
 
-This directory can be used to contain all 3rd party library code.
+This directory can be used to contain all 3rd party library code.  In general, you should try to limit the amount of 3rd party code you need for a website.  However, sometimes it's absolutely necessary to include a vendor package.  When you do, you should try to limit yourself to packages with 0 of their own dependencies.  An example of a highly valuable (you should not do it yourself) yet low complexity (you can read and understand the entire source in a short time) package would be [DOMPurify](https://github.com/cure53/DOMPurify).
