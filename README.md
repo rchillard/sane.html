@@ -3,7 +3,7 @@ Template for building static HTML5 websites.  Building a web application instead
 
 ## Usage
 
-You can `git clone` or download this repository as-is. There is no separate distribution folder.  View a [preview here](https://rchillard.github.io/sane.html/).
+You can `git clone` or download this repository. There is no separate distribution folder.  View a [preview here](https://rchillard.github.io/sane.html/).
 
 ### Basic structure
 
