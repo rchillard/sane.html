@@ -1,5 +1,5 @@
 # sane.html
-Template for building static HTML5 websites.  Interested in building a web application instead?  Check out [sane.app](https://github.com/rchillard/sane.app).
+Template for building static HTML5 websites.  Building a web application instead?  Check out [sane.app](https://github.com/rchillard/sane.app).
 
 ## Influences
 sane.html is primarily based off of [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) with the following changes:
