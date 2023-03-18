@@ -12,7 +12,7 @@ sane.html's CSS includes:
 
 sane.css is a stylesheet that normalizes behavior in modern browsers while providing sane defaults. This combines the idea of a basic boilerplate, a CSS reset, and sane defaults. Using a stylesheet like sane.css drives consistency, but it can also have added benefits. Benefits such as built in protection for inaccessible images.
 
-sane.css combines features from [HTML 5 Boilerplate](https://github.com/h5bp/main.css), (Normalize CSS)[https://github.com/necolas/normalize.css], and the [Modern CSS Reset](https://github.com/hankchizljaw/modern-css-reset):
+sane.css combines features from [HTML 5 Boilerplate](https://github.com/h5bp/main.css), [Normalize CSS](https://github.com/necolas/normalize.css), and the [Modern CSS Reset](https://github.com/hankchizljaw/modern-css-reset):
 
 * A default color, font-size, and line-height (1.4) on the HTML element
 * Setting box-sizing rules to border-box on everything
@@ -30,4 +30,6 @@ page](https://github.com/rchillard/sane.css).
 
 Several base styles are included that build upon `sane.css`. These styles:
 
-* 
+* Provide meaningful CSS variables for colors, fonts, and layouts
+* Use the [CubeCSS](https://cube.fyi/) method for writing CSS
+* Give structure for scaling your CSS in the future
