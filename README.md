@@ -1,18 +1,9 @@
 # sane.html
 Template for building static HTML5 websites.  Building a web application instead?  Check out [sane.app](https://github.com/rchillard/sane.app).
 
-## Influences
-sane.html is primarily based off of [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) with the following changes:
-- Removal of editor and git configuration files
-- Removal of build process and npm configuration files
-- Removal of all extra elements supporting web applications
-- Removal of signficant amounts of superfluous documentation
-- Removal of Google Analytics (try out a privacy preserving alternative instead)
-- Removal of explicit support for Internet Explorer (e.g. no browserconfig.xml)
-
 ## Usage
 
-You can `git clone` or download this repository as-is. There is no separate distribution or dist folder.
+You can `git clone` or download this repository as-is. There is no separate distribution folder.  View a [preview here](https://rchillard.github.io/sane.html/).
 
 ### Basic structure
 
@@ -83,3 +74,12 @@ Edit this file to include any pages you need hidden from search engines.
 
 Replace the default `favicon.ico`, `tile.png`, `tile-wide.png` and Apple Touch
 Icon with your own.
+
+## Influences
+sane.html is primarily based off of [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate) with the following changes:
+- Removal of editor and git configuration files
+- Removal of build process and npm configuration files
+- Removal of all extra elements supporting web applications
+- Removal of signficant amounts of superfluous documentation
+- Removal of Google Analytics (try out a privacy preserving alternative instead)
+- Removal of explicit support for Internet Explorer (e.g. no browserconfig.xml)
