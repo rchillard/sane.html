@@ -48,7 +48,7 @@ initial CSS to help get you started from a solid foundation. [About CSS](doc/css
 
 ### doc
 
-This directory contains all the documentation. You can use it as the location for your documentation. [Read Docs](doc/README.md).
+This directory contains all the documentation. Use it as the location for your documentation. [Read Docs](doc/README.md).
 
 ### img
 
