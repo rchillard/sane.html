@@ -5,6 +5,7 @@
 - [Miscellaneous](#miscellaneous)
   - [robots.txt](#robotstxt)
   - [humans.txt](#humanstxt)
+  - [sitemap.txt](#sitemaptxt)
 
 --
 
@@ -47,4 +48,24 @@ The provided file contains three sections:
 * `TECHNOLOGY COLOPHON` - the section lists technologies used to make the website
 
 For more information about `humans.txt`, please see: http://humanstxt.org/
+
+## sitemap.txt
+
+The `sitemap.txt` file is used to provide a list of individual page URLs. The sitemap is used by search engines to crawl and better understand your pages.  You can learn more here:
+* [sitemaps.org](https://www.sitemaps.org/)
+* [Learn about sitemaps](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview)
+
+Here is an example sitemap.txt:
+```txt
+https://example.com/
+https://example.com/page1.html
+https://example.com/page2.html
+```
+
+The text file is a starting point, but you should generate an XML file as well.  You can generate an XML file without installing any software by using the [npx](https://github.com/npm/npx) tool in conjunction with [sitemap.js](https://github.com/ekalinin/sitemap.js).
+
+This command will take your sitemap.txt and generate a sitemap.xml file:
+```
+npx sitemap < sitemap.txt > sitemap.xml # `npx sitemap -h` for more examples and a list of options.
+```
 
