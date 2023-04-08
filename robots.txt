@@ -6,4 +6,4 @@ Disallow:
 
 # https://www.sitemaps.org/protocol.html
 # Sitemap location
-Sitemap: https://example.com/sitemap_location.xml
+Sitemap: https://example.com/sitemap.xml

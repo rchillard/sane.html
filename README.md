@@ -28,6 +28,7 @@ A sane.html site initially has this structure:
 ├── icon.png
 ├── index.html
 ├── robots.txt
+├── sitemap.txt
 ├── tile.png
 └── tile-wide.png
 ```
@@ -70,6 +71,10 @@ technology powering it.
 
 Edit this file to include any pages you need hidden from search engines.
 
+### sitemap.txt
+
+Add a list of URLs to individual pages in this file, which will guide search engines.
+
 ### Icons
 
 Replace the default `favicon.ico`, `tile.png`, `tile-wide.png` and Apple Touch
@@ -81,5 +86,5 @@ sane.html is primarily based off of [HTML5Boilerplate](https://github.com/h5bp/h
 - Removal of build process and npm configuration files
 - Removal of all extra elements supporting web applications
 - Removal of signficant amounts of superfluous documentation
-- Removal of Google Analytics (try out a privacy preserving alternative instead)
+- Removal of Google Analytics (try out a [privacy preserving alternative](https://plausible.io/) instead)
 - Removal of explicit support for Internet Explorer (e.g. no browserconfig.xml)
