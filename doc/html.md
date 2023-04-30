@@ -37,6 +37,14 @@ controlled by an attacker, such as a `<title>` element) in order to avoid a
 potential [encoding-related security
 issue](https://code.google.com/archive/p/doctype-mirror/wikis/ArticleUtf7.wiki).
 
+### Content Security Policy
+
+Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting (XSS) and data injection attacks.  A CSP works by specifying what domains (origins) assets can be loaded from, including html, images, scripts, and styles.  It is typically implemented with an HTTP header.  However, the meta tag can be used, and is particularly useful when you are building a website without access to the web server (to set HTTP response headers).  For example, you may be using sane.html on a CDN, such as GitHub pages.  You can [read more about CSP here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
+
+```html
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; report-uri /csp-report-endpoint;">
+```
+
 ### Meta Description
 
 The `description` meta tag provides a short description of the page. In some
