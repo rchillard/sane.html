@@ -26,7 +26,9 @@
     --flow-space: 1em;
     --gap: 1.5rem;
 
-    /* spacing: https://utopia.fyi/space/calculator/ */
+    /* spacing: https://utopia.fyi/space/calculator/ 
+       background: https://utopia.fyi/blog/designing-with-a-fluid-space-palette
+    */
     --space-xs: clamp(1.00rem, calc(0.95rem + 0.24vw), 1.13rem);
     --space-s: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem);
     --space-m: clamp(2.00rem, calc(1.90rem + 0.49vw), 2.25rem);
@@ -107,7 +109,8 @@ body {
 .button {
     border: 0;
     cursor: pointer;
-    padding: 1em 2em;
+    /* padding: 1em 2em; */
+    padding: var(--space-xs) var(--space-m);
     text-decoration: none;
 }
 
@@ -135,7 +138,7 @@ body {
 
 .card {
     border-radius: 5px;
-    padding: 1rem;
+    padding: var(--space-xs);
 }
 
 .card h4 {
@@ -143,12 +146,12 @@ body {
 }
 
 .checklist {
-    padding: 1rem;
+    padding: var(--space-xs-s);
 }
 
 .checklist > * {
     display: block;
-    padding-left: 1rem;
+    padding-left: var(--space-xs);
 }
 
 .checklist label {
@@ -168,7 +171,7 @@ body {
 
 .main-menu ul li {
 	display: inline-block;
-	padding-right: 1rem;
+	padding-right: var(--space-xs);
 	position: relative;
 	text-align: left;
 }
