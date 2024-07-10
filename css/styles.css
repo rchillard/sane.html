@@ -4,6 +4,7 @@
     --color-primary: white;
     --color-secondary: black;
     --color-tertiary: gray;
+    --color-highlight: red;
 
     color-scheme: light;
 
@@ -45,12 +46,44 @@
 
 
 /* base */
+a {
+    color: var(--color-highlight);
+}
+
 body {
     font-family: var(--font-stack);
     font-size: var(--step-0);
     letter-spacing: var(--tracking);
 }
 
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid var(--color-highlight);
+    display: inline-block;
+    height: 1rem;
+    margin-right: .5rem;
+    position: relative;
+    width: 1rem;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--color-highlight);
+}
+
+/* Create a custom checkmark */
+input[type="checkbox"]:checked::after {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    content: '';
+    height: 8px;
+    left: 5px;
+    position: absolute;
+    top: 2px;
+    transform: rotate(45deg);
+    width: 4px;
+}
 
 /* compositions - flexible, component-agnostic layouts */
 
@@ -155,7 +188,9 @@ body {
 }
 
 .checklist label {
+    align-items: center;
     border: 1px solid var(--color-tertiary);
+    display: flex;
     margin-bottom: 1px;
 }
 
